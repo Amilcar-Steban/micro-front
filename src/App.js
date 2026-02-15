@@ -14,7 +14,7 @@ function App() {
   const fetchMovies = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:5000/api/movies');
+      const response = await fetch(`/api/movies`);
       if (!response.ok) {
         throw new Error('Error al obtener las películas');
       }
